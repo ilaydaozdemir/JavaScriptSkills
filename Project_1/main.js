@@ -1,17 +1,23 @@
-const num = -5
-if (num > 0) {
-    console.log("number is positive")
+for (let i = 1; i <= 5; i++) {
+    console.log(i)
 }
-else { console.log("else condition") }
 
-const color = 'x'
-switch (color) {
-    case 'red':
-        console.log("color is red")
-        break
-    case 'green':
-        console.log("is not red")
-        break
-    default:
-        console.log("not a valid color")
+let i = 1
+while (i <= 10) {
+    console.log(i)
+    i++
+}
+
+//always run once
+let x = 6
+do {
+    console.log(x)
+    i++
+} while (i <= 5) {
+
+}
+
+const numArray = [1, 2, 3, 4, 5]
+for (const num of numArray) {
+    console.log(num)
 }
