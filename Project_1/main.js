@@ -1,23 +1,24 @@
-for (let i = 1; i <= 5; i++) {
-    console.log(i)
+//basic
+function greet() {
+    console.log("good mornıng")
 }
+greet()
 
-let i = 1
-while (i <= 10) {
-    console.log(i)
-    i++
+//with paremater
+function name(username) {
+    console.log(username)
 }
+name("bruce")
 
-//always run once
-let x = 6
-do {
-    console.log(x)
-    i++
-} while (i <= 5) {
-
+function add(a, b) {
+    return a + b;
 }
+const sum = add(5, 19)
+console.log(sum)
 
-const numArray = [1, 2, 3, 4, 5]
-for (const num of numArray) {
-    console.log(num)
+//arrow function
+const arrowSum = (a, b) => {
+    return a + b;
 }
+const aSum = arrowSum(1, 3)
+console.log(aSum)
