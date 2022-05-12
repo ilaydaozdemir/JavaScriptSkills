@@ -1,24 +1,16 @@
-console.log("hello ilayda")
+//assagment operator
+let x = 10
+let y = 5
+console.log(x++) //10
 
-//variables
+//boolen
+console.log(x === y)
+console.log(x > y)
 
-let age = 25
-console.log(age)
+//logical
+// || or
+const isValidNumber = x > 8 && 8 > y
+console.log(isValidNumber)
 
-const salary = 8000
-console.log(salary)
-
-//property of object
-const person = {
-    "firstName": "ilayda",
-    'age': "25"
-}
-console.log(person.firstName)
-
-const oddNumbers = [1, 3, 5, 7, 9]
-console.log(oddNumbers[0])
-
-let a = 10
-a = 'string'
-a = true
-console.log(a)
+const isEven = 10 % 2 === 1 ? true : false
+console.log(isEven)
