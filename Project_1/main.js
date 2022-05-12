@@ -1,24 +1,12 @@
-//basic
-function greet() {
-    console.log("good mornıng")
-}
-greet()
+//nested function scope
+let a = 10
+function outer() {
+    let b = 20
+    function inner() {
+        let c = 30
+        console.log(a, b, c)
+    }
+    inner()
 
-//with paremater
-function name(username) {
-    console.log(username)
 }
-name("bruce")
-
-function add(a, b) {
-    return a + b;
-}
-const sum = add(5, 19)
-console.log(sum)
-
-//arrow function
-const arrowSum = (a, b) => {
-    return a + b;
-}
-const aSum = arrowSum(1, 3)
-console.log(aSum)
+outer()
