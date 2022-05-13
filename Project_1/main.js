@@ -4,7 +4,8 @@ function outer() {
         counter++
         console.log(counter)
     }
-    inner()
+    return inner
 }
-outer() //1
-outer() //1
+const fn = outer()
+fn() //1
+fn() //2
