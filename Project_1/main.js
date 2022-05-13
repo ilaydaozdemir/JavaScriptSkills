@@ -1,11 +1,7 @@
-function outer() {
-    let counter = 0
-    function inner() {
-        counter++
-        console.log(counter)
+const person = {
+    name: "ilayda",
+    sayMyName: function () {
+        console.log(`My name is ${this.name}`)
     }
-    return inner
 }
-const fn = outer()
-fn() //1
-fn() //2
+person.sayMyName()
