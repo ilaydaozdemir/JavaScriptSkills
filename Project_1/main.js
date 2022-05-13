@@ -1,22 +1,11 @@
-const person = {
-    name: "ilayda",
-    sayMyName: function () {
-        console.log(`My name is ${this.name}`)
-    }
+function Person(fName, lName) {
+    this.firstName = fName
+    this.lastName = lName
 }
-person.sayMyName()
+const person1 = new Person('bruce', "wayne")
+const person2 = new Person('jhon', "wayne")
 
-function sayMyName() {
-    console.log(`My name is ${this.name}`)
+person1.getFullName = function () {
+    return this.firstName + " " + this.lastName
 }
-sayMyName.call(person)
-
-function Person(name) {
-    //this={}
-    this.name = name
-}
-const p1 = new Person("peter")
-const p2 = new Person("white")
-
-console.log(p1.name, p2.name)
-
+console.log(person1.getFullName())
