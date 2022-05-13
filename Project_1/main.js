@@ -1,11 +1,11 @@
-function Person(fName, lName) {
-    this.firstName = fName
-    this.lastName = lName
+class Person {
+    constructor(fname, lname) {
+        this.fisrtName = fname
+        this.lastName = lname
+    }
+    sayMyName() {
+        return this.fisrtName + " " + this.lastName
+    }
 }
-const person1 = new Person('bruce', "wayne")
-const person2 = new Person('jhon', "wayne")
-
-Person.prototype.getFullName = function () {
-    return this.firstName + " " + this.lastName
-}
-console.log(person2.getFullName())
+const classP1 = new Person("x", "y")
+console.log(classP1.sayMyName())
