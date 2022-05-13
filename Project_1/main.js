@@ -5,7 +5,7 @@ function Person(fName, lName) {
 const person1 = new Person('bruce', "wayne")
 const person2 = new Person('jhon', "wayne")
 
-person1.getFullName = function () {
+Person.prototype.getFullName = function () {
     return this.firstName + " " + this.lastName
 }
-console.log(person1.getFullName())
+console.log(person2.getFullName())
