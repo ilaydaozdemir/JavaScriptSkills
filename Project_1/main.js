@@ -5,3 +5,8 @@ const person = {
     }
 }
 person.sayMyName()
+
+function sayMyName() {
+    console.log(`My name is ${this.name}`)
+}
+sayMyName.call(person)
